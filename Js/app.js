@@ -69,4 +69,8 @@ const gamePlay = (() => {
   let currentPlayer;
   let playerOne;
   let playerTwo;
+
+    const switchTurn = () => {
+    currentPlayer = currentPlayer === playerOne ? playerTwo : playerOne;
+  };
 })();
