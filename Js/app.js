@@ -110,4 +110,15 @@ const gamePlay = (() => {
       gameRound();
     }
   };
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (playerOneName.value !== '' && playerTwoName.value !== '') {
+      gameInit();
+      form.classList.add('hidden');
+      document.querySelector('.place').classList.remove('hidden');
+    } else {
+      window.location.reload();
+    }
+  });
 })();
