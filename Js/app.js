@@ -132,3 +132,5 @@ const gamePlay = (() => {
   };
   });
 })();
+
+gamePlay.gameInit();
