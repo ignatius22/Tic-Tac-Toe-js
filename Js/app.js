@@ -22,3 +22,7 @@ const boardModule = (() => {
       cells[idx].textContent = boardArray[idx];
     });
   };
+
+   const reset = () => {
+    boardArray = ['', '', '', '', '', '', '', '', ''];
+  };
